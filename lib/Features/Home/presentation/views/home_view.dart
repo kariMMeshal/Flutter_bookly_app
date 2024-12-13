@@ -1,4 +1,5 @@
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -6,10 +7,18 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children: [
-          CustomAppBar(),
+          const CustomAppBar(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .35,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
+              itemBuilder: (context, index) => const CustomBookCard(),
+            ),
+          ),
         ],
       ),
     );
