@@ -12,7 +12,7 @@ class CustomBookCard extends StatelessWidget {
       child: AspectRatio(
         aspectRatio: 2.8 / 4,
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 10),
+          margin: const EdgeInsets.symmetric(horizontal: 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             color: Colors.red,
