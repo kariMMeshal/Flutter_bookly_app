@@ -16,9 +16,7 @@ class HomeView extends StatelessWidget {
           children: [
             CustomAppBar(),
             BookCardsListView(),
-            SizedBox(
-              height: 50,
-            ),
+            SizedBox(height: 50),
             Text("Best Seller", style: Styles.titleMedium),
           ],
         ),
