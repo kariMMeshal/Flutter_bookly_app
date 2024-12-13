@@ -1,6 +1,9 @@
 import 'package:bookly_app/Core/utils/assets.dart';
+import 'package:bookly_app/Core/utils/constants.dart';
+import 'package:bookly_app/Features/Home/presentation/views/home_view.dart';
 import 'package:bookly_app/Features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -17,12 +20,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   void initState() {
     super.initState();
-    animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 1));
-    slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)
-            .animate(animationController);
-    animationController.forward();
+    initAnimation();
+    navigateToHome();
   }
 
   @override
@@ -38,7 +37,28 @@ class _SplashViewBodyState extends State<SplashViewBody>
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset(AssetsData.logoPath),
-          SlidingText(slidingAnimation: slidingAnimation)
+          SlidingText(slidingAnimation: slidingAnimation),
         ]);
+  }
+
+// Single Responsability Principle 
+
+  void navigateToHome() {
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.to(
+        const HomeView(),
+        transition: Transition.fade,
+        duration: kAnimationDuration,
+      );
+    });
+  }
+
+  void initAnimation() {
+    animationController =
+        AnimationController(vsync: this, duration: kAnimationDuration);
+    slidingAnimation =
+        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
+            .animate(animationController);
+    animationController.forward();
   }
 }
