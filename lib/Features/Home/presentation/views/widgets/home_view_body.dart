@@ -1,3 +1,4 @@
+import 'package:bookly_app/Core/utils/constants.dart';
 import 'package:bookly_app/Core/utils/styles.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/book_tiles_list_view.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/cover_cards_list_view.dart';
@@ -22,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
               CoverCardsListView(),
               SizedBox(height: 30),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30.0),
+                padding: EdgeInsets.symmetric(horizontal: kHorizentalPadding),
                 child: Text("Best Seller", style: Styles.textStyle20),
               ),
               SizedBox(height: 30),
@@ -31,7 +32,7 @@ class HomeViewBody extends StatelessWidget {
         ),
         SliverToBoxAdapter(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30),
+            padding: EdgeInsets.symmetric(horizontal: kHorizentalPadding),
             child: BestSellerListView(),
           ),
         )
