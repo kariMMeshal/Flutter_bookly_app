@@ -1,4 +1,4 @@
-import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_card.dart';
+import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_cover_card.dart';
 import 'package:flutter/material.dart';
 
 class CoverCardsListView extends StatelessWidget {
@@ -13,7 +13,7 @@ class CoverCardsListView extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 10,
-        itemBuilder: (context, index) => const CustomBookCard(),
+        itemBuilder: (context, index) => const CustomBookCoverCard(),
       ),
     );
   }

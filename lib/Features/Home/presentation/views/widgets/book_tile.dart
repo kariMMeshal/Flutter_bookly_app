@@ -25,7 +25,7 @@ class BookTile extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                // color: Colors.red,
+                color: Colors.red,
                 borderRadius: BorderRadius.circular(25),
               ),
               child: Image.asset(
