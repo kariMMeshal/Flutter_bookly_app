@@ -1,8 +1,8 @@
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_card.dart';
 import 'package:flutter/material.dart';
 
-class BookCardsListView extends StatelessWidget {
-  const BookCardsListView({
+class CoverCardsListView extends StatelessWidget {
+  const CoverCardsListView({
     super.key,
   });
 
