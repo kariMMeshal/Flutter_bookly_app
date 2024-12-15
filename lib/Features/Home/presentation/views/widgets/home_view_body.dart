@@ -2,7 +2,7 @@ import 'package:bookly_app/Core/utils/constants.dart';
 import 'package:bookly_app/Core/utils/styles.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/book_tiles_list_view.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/cover_cards_list_view.dart';
-import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly_app/Features/Home/presentation/views/widgets/home_custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -19,7 +19,7 @@ class HomeViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomAppBar(),
+              HomeCustomAppBar(),
               CoverCardsListView(),
               SizedBox(height: 30),
               Padding(
