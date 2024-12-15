@@ -1,5 +1,6 @@
 import 'package:bookly_app/Core/utils/constants.dart';
 import 'package:bookly_app/Core/utils/styles.dart';
+import 'package:bookly_app/Features/Home/presentation/views/widgets/book_action.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_cover_card.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/book_rating.dart';
@@ -31,7 +32,9 @@ class BookDetailsViewBody extends StatelessWidget {
                   color: Colors.white.withValues(alpha: .7)),
             ),
             const SizedBox(height: 10),
-            const BookRating(mainAxisAlignment: MainAxisAlignment.center)
+            const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+            const SizedBox(height: 30),
+            const BookAction(),
           ],
         ),
       ),
