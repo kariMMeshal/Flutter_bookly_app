@@ -2,6 +2,7 @@ import 'package:bookly_app/Core/utils/constants.dart';
 import 'package:bookly_app/Core/utils/styles.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_cover_card.dart';
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_details_app_bar.dart';
+import 'package:bookly_app/Features/Home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -13,6 +14,7 @@ class BookDetailsViewBody extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: kHorizentalPadding),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const CustomBookDetailsAppBar(),
             SizedBox(
@@ -28,6 +30,8 @@ class BookDetailsViewBody extends StatelessWidget {
                   fontStyle: FontStyle.italic,
                   color: Colors.white.withValues(alpha: .7)),
             ),
+            const SizedBox(height: 10),
+            const BookRating(mainAxisAlignment: MainAxisAlignment.center)
           ],
         ),
       ),
