@@ -11,7 +11,7 @@ class CustomBookCoverCard extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.8 / 4,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8),
+        margin: const EdgeInsets.symmetric(horizontal: 5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
           color: Colors.red,

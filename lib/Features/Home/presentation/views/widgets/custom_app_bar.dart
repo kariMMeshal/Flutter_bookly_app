@@ -12,7 +12,6 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 60,
         bottom: 30,
         left: kHorizentalPadding,
         right: kHorizentalPadding,
