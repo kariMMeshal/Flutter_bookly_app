@@ -1,6 +1,3 @@
-
-
-
 import 'package:bookly_app/Features/Home/presentation/views/widgets/custom_book_cover_card.dart';
 import 'package:flutter/material.dart';
 
