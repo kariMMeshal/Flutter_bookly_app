@@ -8,8 +8,8 @@ abstract class Styles {
       letterSpacing: 1,
       fontFamily: kGtSectraFine);
 
-  static const textStyle25 = TextStyle(
-    fontSize: 25,
+  static const textStyle22 = TextStyle(
+    fontSize: 22,
     fontWeight: FontWeight.w600,
     letterSpacing: 1,
   );

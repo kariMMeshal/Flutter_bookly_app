@@ -19,7 +19,7 @@ class BookTile extends StatelessWidget {
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 5),
-        padding: const EdgeInsets.symmetric(horizontal: 5),
+        
         height: 200,
         child: Row(
           children: [
@@ -55,7 +55,7 @@ class BookTile extends StatelessWidget {
                     children: [
                       Text(
                         "19.99 \$",
-                        style: Styles.textStyle25,
+                        style: Styles.textStyle22,
                       ),
                       Spacer(),
                       BookRating()
