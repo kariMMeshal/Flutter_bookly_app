@@ -18,7 +18,7 @@ class BookTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        GoRouter.of(context).push(BookDetailsView.route);
+        GoRouter.of(context).push(BookDetailsView.route, extra: BookModel);
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 5),
