@@ -1,4 +1,3 @@
-import 'package:bookly_app/Features/Home/presentation/views/widgets/book_tile.dart';
 import 'package:flutter/material.dart';
 
 class SearchResultListView extends StatelessWidget {
@@ -10,7 +9,8 @@ class SearchResultListView extends StatelessWidget {
       padding: EdgeInsets.zero,
       shrinkWrap: true,
       itemCount: 10,
-      itemBuilder: (context, index) => const BookTile(),
+      itemBuilder: (context, index) => const Text("data"),
+      // const BookTile(),
     );
   }
 }

@@ -27,7 +27,11 @@ class BookDetailsSection extends StatelessWidget {
               color: Colors.white.withValues(alpha: .7)),
         ),
         const SizedBox(height: 10),
-        const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+        const BookRating(
+          mainAxisAlignment: MainAxisAlignment.center,
+          rating: 0,
+          ratingCount: 0,
+        ),
         const SizedBox(height: 30),
         const BookAction(),
       ],
