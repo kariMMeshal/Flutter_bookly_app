@@ -19,7 +19,7 @@ class BestSellerListView extends StatelessWidget {
             padding: EdgeInsets.zero,
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            itemCount: 10,
+            itemCount: state.newestBooks.length,
             itemBuilder: (context, index) =>
                 BookTile(bookModel: state.newestBooks[index]),
           );
